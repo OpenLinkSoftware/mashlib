@@ -44,9 +44,6 @@ module.exports = (env) => {
       '@trust/webcrypto': 'crypto',
       'webcrypto': 'crypto'
     },
-    devtool: 'source-map',
-    plugins: development ? [] : [
-      new MinifyPlugin({ deadcode: false })
-    ]
+    devtool: 'source-map'
   }
 }
